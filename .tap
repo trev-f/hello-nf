@@ -1,0 +1,13 @@
+1..5
+ok 1 Test Process splitLetters: Should run without failures
+ok 2 Test Process splitLetters: set params manually
+not ok 3 Test Process splitLetters: set nested params manually
+  ---
+  output: null
+  failure: |-
+    groovy.lang.MissingMethodException: No signature of method: hello_splitletters_nf$_run_closure1$_closure4.output() is applicable for argument types: (hello_splitletters_nf$_run_closure1$_closure4$_closure15$_closure17$_closure19) values: [hello_splitletters_nf$_run_closure1$_closure4$_closure15$_closure17$_closure19@60d84f61]
+    Possible solutions: dump(), dump(), getAt(java.lang.String), putAt(java.lang.String, java.lang.Object), getAt(java.lang.String), putAt(java.lang.String, java.lang.Object)
+  ...
+
+ok 4 Test Process splitLetters: load params from yaml
+ok 5 Test Process splitLetters: load nested params from yaml
